@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5, Bom 4</title>
+    <style>
+        #container {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #imgsContainer {
+            border: 2px solid red;
+            width: 450px;
+            height: 450px;
+            position: relative;
+        }
+
+        img {
+            position: absolute;
+        }
+
+        img:first-child {
+            left: 0px;
+            top: 200px;
+        }
+
+        img[alt="right"] {
+            right: 0;
+            top: 200px;
+        }
+
+        img[alt="bottom"] {
+            bottom: 0px;
+            left: 200px;
+        }
+
+        #buttns {
+            margin: 20px 0;
+        }
+
+        p {
+            color: #5c58bb;
+            font-weight: bold;
+        }
+
+        span {
+            display: inline-block;
+            width: 20px
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="imgsContainer">
+            <img src="images/movingPic/icon1.gif" alt="left">
+            <img src="images/movingPic/icon2.gif" alt="right">
+            <img src="images/movingPic/TOP.JPG" alt="bottom">
+        </div>
+
+        <div id="info">
+            <div id="buttns">
+                <input type="submit" value="go" id="goStop">
+                <input type="submit" value="reset" id="reset">
+            </div>
+            <p> &lt;img src="images/movingPic/icon1.gif" style="left: <span id="left">0</span> px"&gt; </p>
+            <p> &lt;img src="images/movingPic/icon2.gif" style="right: <span id="right">0</span> px"&gt; </p>
+            <p> &lt;img src="images/movingPic/Top.gif" style="bottom: <span id="bottom">0</span> px"&gt; </p>
+        </div>
+    </div>
+    <script src="jsFiles/task5_dom4.js"></script>
+</body>
+
+</html>

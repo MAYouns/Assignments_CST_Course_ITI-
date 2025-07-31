@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4, Bom 3</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #fcf7da;
+        }
+
+        h1 {
+            color: #5ca19c;
+            background-color: #f4efc5;
+            padding: 5px;
+            margin: 20px;
+        }
+
+        #container {
+            width: 400px;
+            margin: 25px auto;
+        }
+
+        #container div {
+            display: inline-block;
+            width: 100px;
+            height: 115px;
+            padding: 5px;
+        }
+
+        img,
+        input {
+            display: block;
+            margin: auto;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
+
+        input {
+            margin-top: 5px;
+        }
+
+        textarea {
+            width: 400px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Generate Get Well Soon Card</h1>
+    <div id="container">
+        <div>
+            <label for="pic1">
+                <img src="images/CardMaker/1.jpg" alt="Pic">
+            </label>
+            <input type="radio" name="pic" id="pic1">
+        </div>
+        <div>
+            <label for="pic2">
+                <img src="images/CardMaker/2.jpg" alt="Pic">
+            </label>
+            <input type="radio" name="pic" id="pic2">
+        </div>
+        <div>
+            <label for="pic3">
+                <img src="images/CardMaker/3.jpg" alt="Pic">
+            </label>
+            <input type="radio" name="pic" id="pic3">
+        </div>
+        <div>
+            <label for="pic4">
+                <img src="images/CardMaker/4.jpg" alt="Pic">
+            </label>
+            <input type="radio" name="pic" id="pic4">
+        </div>
+        <div>
+            <label for="pic5">
+                <img src="images/CardMaker/5.jpg" alt="Pic">
+            </label>
+            <input type="radio" name="pic" id="pic5">
+        </div>
+        <div>
+            <label for="pic6">
+                <img src="images/CardMaker/6.jpg" alt="Pic">
+            </label>
+            <input type="radio" name="pic" id="pic6">
+        </div>
+    </div>
+    <div>
+        <h2>Personal Messege</h2>
+        <textarea name="g" id="txt"></textarea>
+    </div>
+    <input type="submit" value="generate">
+    <script src="jsFiles/cookieLab.js"></script>
+    <script src="jsFiles/task4_dom3.js"></script>
+</body>
+
+</html>

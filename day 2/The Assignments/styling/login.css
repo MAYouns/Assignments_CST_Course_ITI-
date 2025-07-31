@@ -1,0 +1,29 @@
+body{
+    background-color: #f0f8ff;
+    font-size: 17px;
+}
+form{
+    width: 500px;
+    margin: 0 auto;
+}
+fieldset{
+    border: 5px solid #86b7fe;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+legend{
+    color: red;
+    font-weight: bold;
+}
+
+label{
+    font-weight: bold;;
+}
+.userName label, .password label, input[type="text"]{
+    display: block;
+}
+
+.userName, .password{
+    margin-bottom: 10px;
+}
+.submit{text-align: center;}

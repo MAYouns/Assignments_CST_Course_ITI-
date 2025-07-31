@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1, Cookies</title>
+    <script>
+
+    </script>
+    <style>
+        .container div {
+            margin: 20px auto;
+            width: 600px;
+        }
+
+        .container label {
+            margin: 5px 0;
+            font-weight: bold;
+        }
+
+        input[type="submit"] {
+            margin-left: 100px;
+        }
+
+        #erorr {
+            width: 500px;
+            margin: 100px auto;
+            padding: 10px;
+            border: 1px solid red;
+            text-align: center;
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <label for="username">Enter Your name: </label>
+            <input type="text" name="username" id="username">
+        </div>
+        <div>
+            <label for="age">Enter Your age: </label>
+            <input type="text" name="age" id="age">
+        </div>
+        <div>
+            <label>Select Your Gender: </label>
+            <div>
+                <input type="radio" name="gender" id="man">
+                <label for="man">
+                    <img src="images/cookies/1.jpg" alt="man">
+                </label>
+                <input type="radio" name="gender" id="woman">
+                <label for="woman">
+                    <img src="images/cookies/2.jpg" alt="woman">
+                </label>
+            </div>
+        </div>
+        <div>
+            <label for="color">Select Your favourite color: </label>
+            <select name="color" id="color">
+                <option value="Red">Red</option>
+                <option value="Blue">Blue</option>
+                <option value="Yellow">Yellow</option>
+                <option value="Orange">Orange</option>
+            </select>
+        </div>
+        <div>
+            <input type="submit" value="register" id="submit">
+        </div>
+    </div>
+
+    <script src="jsFiles/cookieLab.js"></script>
+    <script src="jsFiles/task1_registered.js"></script>
+</body>
+
+</html>

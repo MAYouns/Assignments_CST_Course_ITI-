@@ -1,0 +1,19 @@
+body{
+    background-color: #ffd8da;
+}
+.headersOfBlocks{
+    text-align: center;
+}
+.df{font-family: cursive;}
+.ds{font-size: 12px;}
+.dc{color: red;}
+.img{
+    text-align: center;
+}
+img{width: 200px;}
+.links a{
+    display: inline-block;
+}
+.links a:last-child{
+    float: right;
+}

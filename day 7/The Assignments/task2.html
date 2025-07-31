@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        .slide-show,
+        .img-container {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px auto;
+        }
+
+        .slide-show {
+            width: 200px;
+        }
+
+        .img-container {
+            width: 500px;
+        }
+
+        input {
+            align-self: center;
+        }
+
+        img {
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Showing pics</h1>
+    <hr>
+    <div class="slide-show">
+        <input type="button" value="SlideShow" onclick="slideShow()">
+        <input type="button" value="Stop" onclick="stopfunc()">
+    </div>
+    <div class="img-container">
+        <input type="button" value="Previous" onclick="previous()">
+        <img src="images/slide-show/1.jpg" alt="children" id="img">
+        <input type="button" value="Next" onclick="next()">
+    </div>
+    <script src="js/task2.js"></script>
+</body>
+
+</html>

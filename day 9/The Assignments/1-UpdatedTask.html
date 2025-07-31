@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        form {
+            border: 2px solid darksalmon;
+            border-radius: 10px;
+            width: 400px;
+            margin: auto;
+        }
+
+        form div {
+            padding: 10px;
+        }
+
+        div label,
+        div input {
+            display: block;
+        }
+
+        label {
+            margin: 0 0 10px 0;
+        }
+
+        input {
+            padding: 5px;
+            width: 370px;
+            border: 1px solid darkkhaki;
+        }
+
+        .select label {
+            display: inline-block;
+            margin: 0 20px 0 0;
+        }
+
+        .select select {
+            width: 250px;
+            text-align: center;
+            padding: 5px;
+        }
+
+        input[type="submit"] {
+            width: 200px;
+            margin: auto;
+            background-color: antiquewhite;
+            border: 1px solid burlywood;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <div>
+            <label for="username">The name: </label>
+            <input type="text" name="username" id="username" placeholder="Name">
+        </div>
+        <div>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" placeholder="email">
+        </div>
+        <div>
+            <label for="userpswrd">Password: </label>
+            <input type="password" name="psswrd" id="userpswrd" placeholder="password">
+        </div>
+        <div>
+            <label for="jobtitle">Job Title: </label>
+            <input type="text" name="jobtitle" id="jobtitle" placeholder="Job title">
+        </div>
+        <div>
+            <label for="mobile">The Mobile: </label>
+            <input type="text" name="mobile" id="mobile" placeholder="Mobile Number">
+        </div>
+        <div>
+            <input type="submit" value="submit" id="submit">
+        </div>
+    </form>
+    <script src="jsFiles/1-UpdatedTask.js"></script>
+</body>
+
+</html>

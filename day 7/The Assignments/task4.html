@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        #container {
+            position: relative;
+            width: 396px;
+            height: 298px;
+            margin: auto;
+        }
+
+        #start,
+        #win {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            text-align: center;
+        }
+
+        #start {
+            background-color: rebeccapurple;
+        }
+
+        #start input {
+            margin-top: 34%;
+            padding: 10px;
+            border: none;
+            background-color: papayawhip;
+            border-radius: 15px;
+            cursor: pointer;
+            font-family: cursive;
+        }
+
+        #win {
+            background-color: rgb(249 200 200 / 80%);
+        }
+
+        #win .cong {
+            width: 263px;
+        }
+
+
+        #win button {
+            width: 40px;
+            height: 40px;
+            padding: 0;
+            position: absolute;
+            left: 46%;
+            bottom: 52px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        #win button img {
+            width: 100%;
+            height: 100%;
+            background-color: antiquewhite;
+        }
+
+        .hidden,
+        .visable {
+            transition: transform 0.3s;
+        }
+
+        .hidden {
+            transform: scale(0);
+        }
+
+        .visable {
+            transform: scale(1);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Memory Game</h1>
+    <hr>
+    <div id="container">
+        <div id="start">
+            <input type="button" value="Start The Game" id="startGame">
+        </div>
+        <div id="win" class="hidden">
+            <img src="images/congratulation.png" alt="congratulation" class="cong">
+            <button id="playAgain">
+                <img src=" images/play-again.png" alt="play-again">
+            </button>
+        </div>
+    </div>
+    <script src="js/task4.js"></script>
+</body>
+
+</html>
